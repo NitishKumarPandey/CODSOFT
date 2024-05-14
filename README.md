@@ -1,2 +1,2 @@
-# PORTFOLIO
-Designed a Portfolio using HTML , CSS AND JAVASCRIPT.
+CODSOFT
+Web development internship
