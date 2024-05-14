@@ -2,163 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Movie booking</title>
 </head>
-<body> 
-
-
-    <header class="header">
-        <a href="#home" class="logo">Hello<span> Everyone</span> !</a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section class="home" id="home">
-
-        <div class="home-jpg">
-            
+<body>
+    <section class="top-bar">
+        <div class="left-content">
+            <h2 class="title">Movie Hunter</h2>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">Movies</a></li>
+                <li><a href="#">Theaters</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
         </div>
-
-        <div class="home-content">
-            <h1>It's <span>Nitish Kumar Pandey</span></h1>
-            <h3 class="text-animation">
-               I'm a <span></span>
-            </h3>
-
-            <p> I'm passionate about crafting engaging and intuitive user experiences on the web as a frontend developer.With a solid foundation in HTML, CSS, and JavaScript, I'm eager to dive into the exciting world of frontend development. I'm currently sharpening my skills in responsive design, CSS frameworks, and JavaScript libraries to create dynamic and interactive web experiences.I have made various projects like TO-DO-LIST, AMAZON CLONE , CALCULATOR using Html , Css and Js. In the beginning of my journey faced a lot of problem ,but the time files and in middle of the journey i enjoyed it a lot . Frontend development is all about hardwork , dedication.once you start the journey i'm dam sure you will love it</p>
-
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+        <div class="right-content">
+            <img src="filter.png" alt="" class="filter">
+            <img src="cart.png" alt="" class="cart">
+            <img src="help.png" alt="" class="help">
+            <div class="profile-img-box">
+                <img src="profile.jpg" alt="">
             </div>
-
-            <a href="#" class="btn">Download CV</a>
+            <img src="menu.png" alt="" class="menu">
         </div>
     </section>
-
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3 class="text-animation">
-                <span></span>
-            </h3>
-            <p>I'm passionate about crafting engaging and intuitive user experiences on the web as a frontend developer.With a solid foundation in HTML, CSS, and JavaScript, I'm eager to dive into the exciting world of frontend development. I'm currently sharpening my skills in responsive design, CSS frameworks, and JavaScript libraries to create dynamic and interactive web experiences. </p>
-            <a href="#" class="btn">Read More</a>
+    <section class="main-container">
+        <div class="sidebar">
+            <form action="#">
+                <div class="sidebar-groups">
+                    <h3 class="sg-title">Categories</h3>
+                    <input type="checkbox" id="adventure" name="adventure" value="adventure">
+                    <label for="adventure">Adventure</label><br>
+                    <input type="checkbox" id="action" name="action" value="action">
+                    <label for="action">Action</label><br>
+                    <input type="checkbox" id="animation" name="animation" value="animation">
+                    <label for="animation">Animation</label><br>
+                    <input type="checkbox" id="comedy" name="comedy" value="comedy">
+                    <label for="comedy">Comedy</label><br>
+                    <input type="checkbox" id="science" name="science" value="science">
+                    <label for="science">Science Fiction</label><br>
+                    <input type="checkbox" id="thriller" name="thriller" value="thriller">
+                    <label for="thriller">Thriller</label><br>
+                    <input type="checkbox" id="history" name="history" value="history">
+                    <label for="history">History</label><br>
+                    <input type="checkbox" id="documentary" name="documentary" value="documentary">
+                    <label for="documentary">Documentary</label><br>
+                    <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
+                    <label for="fantasy">Fantasy</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h3 class="sg-title">Language</h3>
+                    <input type="checkbox" id="english" name="english" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" id="spanish" name="spanish" value="spanish">
+                    <label for="spanish">Spanish</label><br>
+                    <input type="checkbox" id="hindi" name="hindi" value="hindi">
+                    <label for="hindi">Hindi</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h3 class="sg-title">Time</h3>
+                    <input type="radio" id="morning" name="time" value="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" id="night" name="time" value="night">
+                    <label for="night">Night</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <a href="#" class="btn-l btn">Apply Filters</a>
+                </div>
+            </form>
         </div>
-        <div class="about-img">
-            <img src="image.jpg" alt="">
+        <div class="movies-container">
+            <div class="upcoming-img-box">
+                <img src="pushpa2.jpg" alt="">
+                <p class="upcoming-title">Upcoming Movie</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="btn-alt btn">Play Trailer</a>
+                </div>
+            </div>
+            <div class="current-movies">
+                <div class="current-movie">
+                    <div class="cm-img-box">
+                        <img src="movie1.jpg" alt="">
+                    </div>
+                    <h3 class="movie-title">Jurassic World</h3>
+                    <p class="screen-name">Screen : Platinum</p>
+                    <div class="booking">
+                        <h2 class="price">15$</h2>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="current-movie">
+                    <div class="cm-img-box">
+                        <img src="movie2.jpg" alt="">
+                    </div>
+                    <h3 class="movie-title">Vikram</h3>
+                    <p class="screen-name">Screen : Gold</p>
+                    <div class="booking">
+                        <h2 class="price">10$</h2>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="current-movie">
+                    <div class="cm-img-box">
+                        <img src="movie3.jpg" alt="">
+                    </div>
+                    <h3 class="movie-title">Firestarter</h3>
+                    <p class="screen-name">Screen : Silver</p>
+                    <div class="booking">
+                        <h2 class="price">5$</h2>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Skills</h2>
-
-        <div class="services-container">
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Creativity</h4>
-                    <p>Creativity is a characteristic of someone that forms something novel and valuable. The created item may be intangible or a physical object. Creativity enables people to solve problems in new or innovative ways.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Frontend Development</h4>
-                    <p>Frontend development involves creating the user interface and user experience of a website or web application. It focuses on the design, layout, and interactivity of the application that users interact with directly in their web browsers. Frontend developers use a combination of programming languages such as HTML, CSS, and JavaScript to build the visual and interactive elements of a website.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI / UX designer</h4>
-                    <p>As a newcomer to the field , I'm thrilled to be stepping into the world of UI/UX design as a fresher. My passion lies in crafting engaging digital experiences that are not only visually captivating but also intuitive and user-friendly.I bring a fresh perspective and a hunger for learning and growing in this dynamic industry. </p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Content management</h4>
-                    <p>Content management involves the creation, organization, publication, and maintenance of digital content. It encompasses a set of processes, tools, and workflows that enable individuals or organizations to efficiently manage their content throughout its lifecycle.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Leadership</h4>
-                    <p>Leadership is the ability to inspire, influence, and guide others towards a common goal or vision. It involves a combination of interpersonal skills, strategic thinking, and emotional intelligence. Effective leaders empower their team members, foster collaboration, and create an environment where individuals can thrive and contribute their best work.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Object-Oriented Programming</h4>
-                    <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data in the form of fields or attributes and code in the form of procedures or methods. OOP emphasizes the organization of software into manageable, reusable components, making it easier to develop, maintain, and scale complex systems.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-
-       <h2 class="heading">Contact <span>Me
-       </span></h2> 
-
-       <form action="#">
-
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="input-box">
-           <input type="number" placeholder="Phone Number">
-           <input type="text" placeholder="Subject"> 
-        </div>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-       </form>
-    </section>
-
-    <footer class="footer">
-
-       <div class="social">
-        <div class="social-icons">
-            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#"><i class='bx bxl-facebook-square'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-       </div> 
-
-       <ul class="list">
-        <li>
-            <a href="#">FAQ</a>
-        </li>
-
-        <li>
-            <a href="#">Services</a>
-        </li>
-
-        <li>
-            <a href="#">About Me</a>
-        </li>
-
-        <li>
-            <a href="#">Contact</a>
-        </li>
-
-        <li>
-            <a href="#">Privacy Policy</a>
-        </li>
-       </ul>
-       <p class="copyright">
-        © Nitish Kumar Pandey | All Rights Reserved
-       </p>
-    </footer>
-    <script src="script.js"></script>
-</body>  
+</body>
 </html> 
